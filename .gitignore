@@ -1,0 +1,13 @@
+[System.IO.File]::WriteAllText("C:\Users\pjeni\devassist\.gitignore", @"
+venv/
+node_modules/
+chroma_store/
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.vscode/
+"@, [System.Text.Encoding]::UTF8)

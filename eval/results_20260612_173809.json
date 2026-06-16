@@ -1,0 +1,188 @@
+{
+  "timestamp": "20260612_173809",
+  "accuracy": 0.5511111111111112,
+  "passed": 10,
+  "total": 15,
+  "results": [
+    {
+      "question": "what file extensions are supported?",
+      "score": 1.0,
+      "matched": [
+        "py",
+        "js",
+        "ts",
+        "java",
+        "cpp",
+        "go",
+        "rs"
+      ],
+      "missed": [],
+      "status": "PASS"
+    },
+    {
+      "question": "how does chunking work?",
+      "score": 0.6,
+      "matched": [
+        "chunk_size",
+        "overlap",
+        "splitlines"
+      ],
+      "missed": [
+        "60",
+        "10"
+      ],
+      "status": "PASS"
+    },
+    {
+      "question": "where is chromadb configured?",
+      "score": 1.0,
+      "matched": [
+        "chroma_store",
+        "CHROMA_DB_PATH",
+        "config"
+      ],
+      "missed": [],
+      "status": "PASS"
+    },
+    {
+      "question": "what embedding model is used?",
+      "score": 0.6666666666666666,
+      "matched": [
+        "MiniLM",
+        "all-MiniLM-L6-v2"
+      ],
+      "missed": [
+        "sentence-transformers"
+      ],
+      "status": "PASS"
+    },
+    {
+      "question": "how are query results retrieved?",
+      "score": 0.3333333333333333,
+      "matched": [
+        "query_codebase"
+      ],
+      "missed": [
+        "collection",
+        "n_results"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "question": "what LLM is used to generate answers?",
+      "score": 0.0,
+      "matched": [],
+      "missed": [
+        "llama3",
+        "ollama",
+        "localhost"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "question": "how does BM25 search work in this codebase?",
+      "score": 0.6666666666666666,
+      "matched": [
+        "BM25Okapi",
+        "tokenized"
+      ],
+      "missed": [
+        "bm25_scores"
+      ],
+      "status": "PASS"
+    },
+    {
+      "question": "what is reciprocal rank fusion?",
+      "score": 1.0,
+      "matched": [
+        "reciprocal_rank_fusion",
+        "fused",
+        "rank"
+      ],
+      "missed": [],
+      "status": "PASS"
+    },
+    {
+      "question": "how does the review command work?",
+      "score": 0.0,
+      "matched": [],
+      "missed": [
+        "review_file",
+        "filepath",
+        "open"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "question": "how does the debug command work?",
+      "score": 0.6666666666666666,
+      "matched": [
+        "debug",
+        "error"
+      ],
+      "missed": [
+        "query_codebase"
+      ],
+      "status": "PASS"
+    },
+    {
+      "question": "what collections are used in chromadb?",
+      "score": 0.6666666666666666,
+      "matched": [
+        "COLLECTION_NAME",
+        "devassist_code"
+      ],
+      "missed": [
+        "get_or_create_collection"
+      ],
+      "status": "PASS"
+    },
+    {
+      "question": "how is the git diff retrieved?",
+      "score": 0.6666666666666666,
+      "matched": [
+        "diff",
+        "staged"
+      ],
+      "missed": [
+        "git.Repo"
+      ],
+      "status": "PASS"
+    },
+    {
+      "question": "what happens when a file is too long?",
+      "score": 0.6666666666666666,
+      "matched": [
+        "truncated",
+        "5000"
+      ],
+      "missed": [
+        "4000"
+      ],
+      "status": "PASS"
+    },
+    {
+      "question": "how are chunks stored in the database?",
+      "score": 0.0,
+      "matched": [],
+      "missed": [
+        "collection.add",
+        "batch_size",
+        "documents"
+      ],
+      "status": "FAIL"
+    },
+    {
+      "question": "what folders are skipped during indexing?",
+      "score": 0.3333333333333333,
+      "matched": [
+        "node_modules"
+      ],
+      "missed": [
+        "__pycache__",
+        "venv"
+      ],
+      "status": "FAIL"
+    }
+  ]
+}

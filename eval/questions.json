@@ -1,0 +1,62 @@
+[
+    {
+        "question": "what file extensions are supported?",
+        "expected_keywords": ["py", "js", "ts", "java", "cpp", "go", "rs"]
+    },
+    {
+        "question": "how does chunking work?",
+        "expected_keywords": ["chunk_size", "overlap", "splitlines", "60", "10"]
+    },
+    {
+        "question": "where is chromadb configured?",
+        "expected_keywords": ["chroma_store", "CHROMA_DB_PATH", "config"]
+    },
+    {
+        "question": "what embedding model is used?",
+        "expected_keywords": ["MiniLM", "sentence-transformers", "all-MiniLM-L6-v2"]
+    },
+    {
+        "question": "how are query results retrieved?",
+        "expected_keywords": ["query_codebase", "collection", "n_results"]
+    },
+    {
+        "question": "what LLM is used to generate answers?",
+        "expected_keywords": ["llama3", "ollama", "localhost"]
+    },
+    {
+        "question": "how does BM25 search work in this codebase?",
+        "expected_keywords": ["BM25Okapi", "tokenized", "bm25_scores"]
+    },
+    {
+        "question": "what is reciprocal rank fusion?",
+        "expected_keywords": ["reciprocal_rank_fusion", "fused", "rank"]
+    },
+    {
+        "question": "how does the review command work?",
+        "expected_keywords": ["review_file", "filepath", "open"]
+    },
+    {
+        "question": "how does the debug command work?",
+        "expected_keywords": ["debug", "error", "query_codebase"]
+    },
+    {
+        "question": "what collections are used in chromadb?",
+        "expected_keywords": ["COLLECTION_NAME", "devassist_code", "get_or_create_collection"]
+    },
+    {
+        "question": "how is the git diff retrieved?",
+        "expected_keywords": ["git.Repo", "diff", "staged"]
+    },
+    {
+        "question": "what happens when a file is too long?",
+        "expected_keywords": ["truncated", "5000", "4000"]
+    },
+    {
+        "question": "how are chunks stored in the database?",
+        "expected_keywords": ["collection.add", "batch_size", "documents"]
+    },
+    {
+        "question": "what folders are skipped during indexing?",
+        "expected_keywords": ["node_modules", "__pycache__", "venv"]
+    }
+]
